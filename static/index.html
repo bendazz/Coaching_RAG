@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coaching RAG</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Coaching Assistant</h1>
+
+    <label for="collection">Report</label>
+    <select id="collection">
+      <option value="roster_2026">Roster 2026</option>
+      <option value="opponents_2026">Opponents 2026</option>
+      <option value="scouting_2027">Scouting 2027</option>
+    </select>
+
+    <label for="question">Question</label>
+    <textarea id="question" rows="4" placeholder="Ask about the selected report..."></textarea>
+
+    <button id="ask">Ask</button>
+
+    <section id="answer" class="answer"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
